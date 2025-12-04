@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример</title>
+</head>
+<body>
+<div style="display: grid; grid-column-gap: 1em; grid-template-columns: 1fr 1fr;">
+    <form style="display: grid; grid-row-gap: 1em; grid-template-columns: 1fr;">
+        <label> Курс:
+            <input id="course" type="number" min="1" max="4">
+        </label>
+
+        <label> Группа:
+            <input id="group" type="number" min="1" max="20">
+        </label>
+
+        <label> Подгруппа:
+            <input id="sub-group" type="number" min="1" max="2">
+        </label>
+
+        <label> День недели:
+            <select id="day">
+                <option value="0">Понедельник</option>
+                <option value="1">Вторник</option>
+                <option value="2">Среда</option>
+                <option value="3">Четверг</option>
+                <option value="4">Пятница</option>
+                <option value="5">Суббота</option>
+            </select>
+        </label>
+
+        <button id="submit" style="width: 10em">Получить расписание</button>
+    </form>
+    <div id="output"></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
